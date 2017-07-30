@@ -113,46 +113,13 @@ h4 {
     background: #dddddd;
     transition: .5s;
 }
-
-/*
-.float-left:hover + h1 {
-    border-bottom: 2px solid;
-    transition: .5s ease-in-out;
-    transition-property: border-bottom, opacity;
-    transition-duration: 5s;
-    transition-timing-function: ease-out;
-}
-*/
-
-/*
-.float-left:acitve + h1 {
-    transition: .5s;
-}
-*/
-/*
-.float-right:hover + h1 {
-    border-bottom: 2px solid;
-    transition: .5s;
-}
-*/
-
 .center-text:hover, .float-right:hover + .center-text {
     color: #bababa;
-/*    border-bottom: 2px solid;*/
     transition: .5s;
 }
 .center-text:hover:after, .float-right:hover + .center-text:after, .float-left:hover + .center-text:after {
     height: 2px;
 }
-
-/*
-.float-container img {
-    opacity: 1;
-    -webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
-}
-*/
-
 .float-container img {
     transition: .5s;
 }
@@ -166,71 +133,6 @@ h4 {
 .float-right {
     width: 50%;
     float: right;
-}
-/*Row one code ends here ===========================================*/
-.right-image-row {
-    margin-top: 18%;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    list-style: none;
-    font-size: 40px;
-    letter-spacing: 8px;
-}
-.right-image {
-    position: absolute;
-    right: 0px;
-    width: 50%;
-    padding-right: 6%;
-}
-.home-text-right {
-    width: 100%;
-    text-align: center;
-    z-index: 10;
-}
-
-.home-text-right a{
-    text-decoration: none;
-    color: inherit;
-}
-
-.home-text-right a:hover {
-    color: #B2A3B5;
-    transition: .20s;
-    border-bottom: 2px solid;
-}
-
-/*Row three code starts here ==========================*/
-
-.left-image-row2 {
-    margin-top: 160px;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    list-style: none;
-    font-size: 40px;
-    letter-spacing: 8px;
-}
-.left-image2 {
-    width: 50%;
-    padding-left: 6%;
-}
-.home-text {
-    position: absolute;
-    width: 100%;
-    text-align: center;
-}
-.home-text a{
-    text-decoration: none;
-    color: inherit;
-}
-
-.home-text a:hover {
-    color: #B2A3B5;
-    transition: .20s;
-    border-bottom: 2px solid;
 }
 .social-media ul {
     margin-top: 5%;
@@ -251,12 +153,6 @@ h4 {
 .social-media-bar li:hover {
     color: #bababa;
     transition: .5s;
-}
-
-/* Band Page ======================================================================*/
-
-.test {
-    position: relative;
 }
 .upper-left {
     position: absolute;
@@ -341,9 +237,6 @@ h4 {
     width: 50%;
 }
 
-/* Band Page Ends ========================================================*/
-
-/* Shop Page Begins ==========================================*/
 .shopleft-image-row {
     margin-top: 6%;
     padding-bottom: 6%;
@@ -462,5 +355,3 @@ a {
     background-color: #bababa;
     transition: .5s;
 }
-
-/* Tour Page Ends ==========================================*/

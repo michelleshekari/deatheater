@@ -1,0 +1,466 @@
+@font-face {
+  font-family: 'Visuelt-Regular';
+  src: url('../css/webfont/Visuelt-Regular.eot?#iefix') format('embedded-opentype'),  url('../css/webfont/Visuelt-Regular.otf')  format('opentype'),
+	     url('../css/webfont/Visuelt-Regular.woff') format('woff'), url('../css/webfont/Visuelt-Regular.ttf')  format('truetype'), url('../css/webfont/Visuelt-Regular.svg#Visuelt-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+    color: #dddddd;
+    background-color: #111111;
+    font-family: 'Visuelt-Regular', sans-serif;
+    font-weight: normal;
+
+}
+body {
+    padding: 2%;
+    font-weight: normal;
+}
+.logo-bar {
+    text-align: center;
+}
+.logo {
+    width: 80px;
+}
+.nav-homepage-bar {
+    color: #666666;
+    list-style-type: none;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+.nav-homepage-bar li {
+    display: inline;
+}
+.nav-homepage-bar li a{
+    text-decoration: none;
+    color: inherit;
+    margin-right: 40px;
+}
+
+h1 {
+    font-weight: normal;
+    font-size: 32px;
+}
+h2 {
+    font-size: 16px;
+    font-weight: normal;
+}
+h3 {
+    font-size: 16px;
+    font-weight: normal; 
+}
+.nav-style{
+    font-size: 16px;
+    letter-spacing: 3px;
+    font-weight: normal;
+}
+h4 {
+    font-size: 18px;
+    font-weight: normal;
+    margin-top: 30px;
+}
+.footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666666;
+    margin-bottom: 10px;
+}
+
+/*Row one code starts here ======================================*/
+.float-container {
+    margin-top: 6%;
+    position: relative;
+    overflow: auto;
+    padding: 2%;
+}
+.float-container:after {
+   content: ""; 
+   display: table;
+   clear: both;
+}
+.center-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 100px;
+    letter-spacing: 8px;
+    text-decoration: none;
+    color: #dddddd;
+    transition: .5s linear;
+}
+
+.center-text:after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height: 0px;
+    width: 100%;
+    background: #dddddd;
+    transition: .5s;
+}
+
+/*
+.float-left:hover + h1 {
+    border-bottom: 2px solid;
+    transition: .5s ease-in-out;
+    transition-property: border-bottom, opacity;
+    transition-duration: 5s;
+    transition-timing-function: ease-out;
+}
+*/
+
+/*
+.float-left:acitve + h1 {
+    transition: .5s;
+}
+*/
+/*
+.float-right:hover + h1 {
+    border-bottom: 2px solid;
+    transition: .5s;
+}
+*/
+
+.center-text:hover, .float-right:hover + .center-text {
+    color: #bababa;
+/*    border-bottom: 2px solid;*/
+    transition: .5s;
+}
+.center-text:hover:after, .float-right:hover + .center-text:after, .float-left:hover + .center-text:after {
+    height: 2px;
+}
+
+/*
+.float-container img {
+    opacity: 1;
+    -webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+*/
+
+.float-container img {
+    transition: .5s;
+}
+.float-container:hover img {
+    opacity: .5;
+}
+.float-left {
+    width: 50%;
+    float: left;
+}
+.float-right {
+    width: 50%;
+    float: right;
+}
+/*Row one code ends here ===========================================*/
+.right-image-row {
+    margin-top: 18%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style: none;
+    font-size: 40px;
+    letter-spacing: 8px;
+}
+.right-image {
+    position: absolute;
+    right: 0px;
+    width: 50%;
+    padding-right: 6%;
+}
+.home-text-right {
+    width: 100%;
+    text-align: center;
+    z-index: 10;
+}
+
+.home-text-right a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.home-text-right a:hover {
+    color: #B2A3B5;
+    transition: .20s;
+    border-bottom: 2px solid;
+}
+
+/*Row three code starts here ==========================*/
+
+.left-image-row2 {
+    margin-top: 160px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style: none;
+    font-size: 40px;
+    letter-spacing: 8px;
+}
+.left-image2 {
+    width: 50%;
+    padding-left: 6%;
+}
+.home-text {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+.home-text a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.home-text a:hover {
+    color: #B2A3B5;
+    transition: .20s;
+    border-bottom: 2px solid;
+}
+.social-media ul {
+    margin-top: 5%;
+    display: flex;
+    list-style: none;
+    margin-left: 12%;
+    margin-right: 12%;
+    bottom: 0px;
+}
+.social-media-bar li {
+    width: 33.33%;
+    text-align: center;
+}
+.social-media-bar a {
+    text-decoration: none;
+    color: inherit;
+}
+.social-media-bar li:hover {
+    color: #bababa;
+    transition: .5s;
+}
+
+/* Band Page ======================================================================*/
+
+.test {
+    position: relative;
+}
+.upper-left {
+    position: absolute;
+    top: 2%;
+    left: 2%;
+}
+.upper-left a{
+    text-decoration: none;
+    color: inherit;
+}
+.upper-left:hover {
+    color: #bababa;
+    transition: .5s;
+}
+.upper-right {
+    position: absolute;
+    top: 2%;
+    right: 2%;
+}
+.upper-right a{
+    text-decoration: none;
+    color: inherit;
+}
+.upper-right:hover {
+    color: #bababa;
+    transition: .5s;
+
+}
+.lower-left {
+    position: fixed;
+    bottom: 2%;
+    left: 2%;
+}
+.lower-left a{
+    text-decoration: none;
+    color: inherit;
+}
+.lower-left:hover {
+    color: #bababa;
+    transition: .5s;
+
+}
+.lower-right {
+    position: fixed;
+    bottom: 2%;
+    right: 2%;
+}
+.lower-right a{
+    text-decoration: none;
+    color: inherit;
+}
+.lower-right:hover {
+    color: #bababa;
+    transition: .5s;
+}
+.band-row {
+    position: relative;
+    overflow: auto;
+    padding: 2%;
+}
+.left-band-image {
+    float: left;
+    width: 50%;
+    padding: 2%;
+}
+.right-band-image {
+    float: right;
+    width: 50%;
+    padding: 2%;
+}
+.band-row-text {
+    display: flex;
+}
+.band-text-left {
+    float: left;
+    text-align: center;
+    width: 50%;
+}
+.band-text-right {
+    float: right;
+    text-align: center;
+    width: 50%;
+}
+
+/* Band Page Ends ========================================================*/
+
+/* Shop Page Begins ==========================================*/
+.shopleft-image-row {
+    margin-top: 6%;
+    padding-bottom: 6%;
+    position: relative;
+    display: flex;
+    border-bottom: solid #dddddd .50px;
+}
+.shop-float-left {
+    float: left;
+    width: 50%;
+    margin-left: 6%;
+}
+.shop1 {
+    height: 300px;
+}
+.shop-text-float-right {
+    width: 50%;
+}
+.buy-button {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0 1em;
+    height: 3.2em;
+    width: 10em;
+    text-align: center;
+    background-color: #dddddd;
+    color: #000000;
+    border: none;
+    font-family: inherit;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: normal;
+}
+.buy-button a{
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+.buy-button:hover {
+    background-color: #bababa;
+    transition: .5s;
+
+}
+a {
+    text-decoration: none;
+}
+.description-text {
+    margin-bottom: 30px;
+}
+.shop-text-float-left {
+    width: 50%;
+    float: left;
+    margin-left: 6%;
+}
+.shop1 {
+    height: 300px;
+}
+.shop-float-right {
+    float: right;
+    width: 50%;
+}
+
+/* Shop Page Ends ==========================================*/
+/* Tour Page Begins ==========================================*/
+.tour-row {
+    margin-top: 6%;
+    overflow: auto;
+    position: relative;
+    display: flex;
+    border-bottom: solid #dddddd .50px;
+    padding-bottom: 10px;
+}
+.date {
+    float: left;
+    width: 33.33%;
+    text-align: center;
+}
+.location {
+    float: left;
+    width: 33.33%;
+    text-align: center;
+}
+.buy-tickets-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: right;
+    width: 20%;
+    height: 60px;
+    margin-left: 4%;
+    background-color: #dddddd;
+    color: #000000;
+    border: none;
+    font-family: inherit;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: normal;
+}
+.buy-tickets-button a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    width: 33.333333333%;
+    margin-left: 8%;
+    margin-right: 8%;
+    background-color: #dddddd;
+    color: #000000;
+    border: none;
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+}
+.buy-tickets-button:hover{
+    background-color: #bababa;
+    transition: .5s;
+}
+
+/* Tour Page Ends ==========================================*/

@@ -1,0 +1,8 @@
+
+@font-face {
+  font-family: 'Visuelt-Regular';
+  src: url('Visuelt-Regular.eot?#iefix') format('embedded-opentype'),  url('Visuelt-Regular.otf')  format('opentype'),
+	     url('Visuelt-Regular.woff') format('woff'), url('Visuelt-Regular.ttf')  format('truetype'), url('Visuelt-Regular.svg#Visuelt-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

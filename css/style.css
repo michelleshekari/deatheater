@@ -115,7 +115,7 @@ h4 {
 }
 .center-text:hover, .float-right:hover + .center-text {
     color: #bababa;
-    transition: .5s;
+    /*transition: .5s;*/
 }
 .center-text:hover:after, .float-right:hover + .center-text:after, .float-left:hover + .center-text:after {
     height: 2px;

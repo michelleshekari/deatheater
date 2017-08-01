@@ -83,7 +83,7 @@ h4 {
 .float-container {
     margin-top: 6%;
     position: relative;
-    overflow: auto;
+    /*overflow: auto;*/
     padding: 2%;
 }
 .float-container:after {
@@ -95,12 +95,13 @@ h4 {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    /* fix for the jumping text */
+    transform: translate(-50%,-50%) translate3d(0,0,0);
     font-size: 100px;
     letter-spacing: 8px;
     text-decoration: none;
     color: #dddddd;
-    transition: .5s linear;
+    transition: .5s color;
 }
 
 .center-text:after {
@@ -113,18 +114,24 @@ h4 {
     background: #dddddd;
     transition: .5s;
 }
-.center-text:hover, .float-right:hover + .center-text {
+.center-text:hover, .float-right:hover + .center-text, .float-left:hover + .center-text {
     color: #bababa;
+    /*filter: brightness(50%);*/
     /*transition: .5s;*/
 }
 .center-text:hover:after, .float-right:hover + .center-text:after, .float-left:hover + .center-text:after {
     height: 2px;
+    /*opacity: 1;*/
 }
 .float-container img {
     transition: .5s;
+    display: block;
+    /*position: relative;*/
 }
 .float-container:hover img {
-    opacity: .5;
+    /*opacity: .5;*/
+    /*-webkit-backface-visibility: hidden;*/
+    filter: brightness(50%);
 }
 .float-left {
     width: 50%;
